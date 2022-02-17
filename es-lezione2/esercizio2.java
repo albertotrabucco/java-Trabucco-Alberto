@@ -17,7 +17,7 @@ public class esercizio2 {
         for(int i = 0; i < a.length; i++){
             arrcheckDesc[i] = arrcheckDesc[i]*(-1);
         }
-        if(arrcheckAsc != a || arrcheckDesc != a){
+        if(arrcheckAsc != a && arrcheckDesc != a){
             risposta = "Non sono in ordine";
         }else{
             if(arrcheckAsc == a){
