@@ -31,7 +31,6 @@ public class esercizio1{
                 System.out.print(userarray[k]);
             }
             System.out.println("\n");
-            System.out.print("Le cifre nella posizione giusta sono: ");
             int ncifre = 0;
             int sumcifre = 0;
             for(int i = 0; i < n; i++){
@@ -40,7 +39,15 @@ public class esercizio1{
                 sumcifre += userarray[i];
                 }
             }
-
+            if(ncifre == 5){
+                System.out.println("Hai trovato il numero corretto!");
+            }else{
+            System.out.print("Le cifre nella posizione giusta sono: ");
+            System.out.print(ncifre);
+            System.out.println("\n");
+            System.out.print("La somma delle cifre trovate è: ");
+            System.out.print(sumcifre);
+            }
             //compara con un array randomico generato in una funzione fuori dal main
 
             
