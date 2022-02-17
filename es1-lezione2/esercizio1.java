@@ -2,8 +2,10 @@ import java.util.Scanner;
 import java.util.Random;
 public class esercizio1{
     public static void main(String[] args){
-        int tentativi = 1;
         Scanner keyboard = new Scanner(System.in);
+        System.out.println("Quanti tenativi vuoi avere? ");
+        int tentativi = Integer.parseInt(keyboard.nextLine());
+
         int n = 5;
         
         int randomarray[]= new int[n];
