@@ -17,15 +17,15 @@ public class esercizio2 {
         for(int i = 0; i < a.length; i++){
             arrcheckDesc[i] = arrcheckDesc[i]*(-1);
         }
-
-        if(arrcheckAsc == a){
-            risposta = "Sono in ordine decrescente!";
-        }if (arrcheckDesc == a) {
-            risposta = "Sono in ordine crescente!";
-        }else{
+        if(arrcheckAsc != a || arrcheckDesc != a){
             risposta = "Non sono in ordine";
-        }
-        
+        }else{
+            if(arrcheckAsc == a){
+                risposta = "Sono in ordine decrescente!";
+            }else{
+                risposta = "Sono in ordine crescente!";
+            }
+         }
         return risposta;
     }
     
