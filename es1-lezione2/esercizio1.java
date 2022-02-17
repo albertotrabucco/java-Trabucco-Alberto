@@ -15,6 +15,7 @@ public class esercizio1{
         for(int k=0; k < n; k++){
             System.out.print(randomarray[k] + " ");
         }
+        System.out.println("\n");
 
         for(int i = 0; i < tentativi; i++){
             System.out.println("Inserisci un numero di 5 cifre: ");
