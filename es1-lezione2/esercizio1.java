@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 public class esercizio1{
     public static void main(String[] args){
-        int tentativi = 10;
+        int tentativi = 1;
         Scanner keyboard = new Scanner(System.in);
         int n = 5;
         
@@ -17,12 +17,13 @@ public class esercizio1{
         }
         System.out.println("\n");
 
-        for(int i = 0; i < tentativi; i++){
+        int tries = 0;
+        while(tries < n){
             System.out.println("Inserisci un numero di 5 cifre: ");
             int userarray[] = new int[n];
             for(int j=0; j < n; j++){
                 System.out.println("Inserisci il "+(j+1)+"° numero:");
-                userarray[i] = Integer.parseInt(keyboard.nextLine());
+                userarray[j] = Integer.parseInt(keyboard.nextLine());
             }
             for(int k=0; k < n; k++){
                 System.out.println("Questo è il numero che hai scritto: ")
