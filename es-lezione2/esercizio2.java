@@ -21,8 +21,6 @@ public class esercizio2 {
             risposta = "Sono in ordine decrescente!";
         }if (arrcheckAsc == a) {
             risposta = "Sono in ordine crescente!";
-        } else {
-            risposta = "Non sono in ordine!";
         }
         
         return risposta;
