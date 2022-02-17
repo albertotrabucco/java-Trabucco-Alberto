@@ -41,6 +41,7 @@ public class esercizio1{
             }
             if(ncifre == 5){
                 System.out.println("Hai trovato il numero corretto!");
+                break;
             }else{
             System.out.print("Le cifre nella posizione giusta sono: ");
             System.out.print(ncifre);
