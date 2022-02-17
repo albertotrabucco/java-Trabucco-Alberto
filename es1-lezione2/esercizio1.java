@@ -28,12 +28,14 @@ public class esercizio1{
             System.out.println("\n");
             System.out.println("Questo è il numero che hai scritto: ");
             for(int k=0; k < n; k++){                
-                System.out.println(userarray[k]);
+                System.out.print(userarray[k]);
             }
             
 
+            
             //compara con un array randomico generato in una funzione fuori dal main
-
+            System.out.println("\n");
+            System.out.println("-----------------------------------------------------------------");
 
             
         }
