@@ -40,8 +40,7 @@ public class esercizio1{
             for(int i = 0; i < n; i++){
                 if(userarray[i] == randomarray[i]){
                 ncifre++;
-                sumcifre += userarray[i];
-                tries++;
+                sumcifre += userarray[i];                
                 }
             }
             if(ncifre == 5){
@@ -53,6 +52,7 @@ public class esercizio1{
             System.out.println("\n");
             System.out.print("La somma delle cifre trovate è: ");
             System.out.print(sumcifre);
+            tries++;
             }
             
             System.out.println("\n");
