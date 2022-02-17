@@ -21,6 +21,8 @@ public class esercizio1{
 
         int tries = 0;
         while(tries < tentativi){
+            System.out.print("Tentativi rimasti: ");
+            System.out.println(tentativi-tries);
             System.out.println("Inserisci un numero di 5 cifre: ");
             int userarray[] = new int[n];
             for(int j=0; j < n; j++){
@@ -39,6 +41,7 @@ public class esercizio1{
                 if(userarray[i] == randomarray[i]){
                 ncifre++;
                 sumcifre += userarray[i];
+                tries++;
                 }
             }
             if(ncifre == 5){
