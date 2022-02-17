@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class esercizio2 {
     public static String checkSort(int[] a){
@@ -9,12 +8,16 @@ public class esercizio2 {
         int arrcheckDesc[] = new int[10];
         for(int i = 0; i < a.length ;i++){
             arrcheckAsc[i] = a[i];
-            arrcheckDesc[i] = a[i];
+            arrcheckDesc[i] = -a[i];
         }
         Arrays.sort(arrcheckAsc);
-        Arrays.sort(arrcheckDesc, Collections.reverseOrder());
+        Arrays.sort(arrcheckDesc);
 
-        if(arrcheckDesc == a || arrcheckDesc != a){
+        for(int i = 0; i < a.length; i++){
+            arrcheckDesc[i] = arrcheckDesc[i]*(-1);
+        }
+
+        if(arrcheckDesc != a || arrcheckDesc != a){
             risposta = "Sono in ordine decrescente!";
         }if (arrcheckAsc == a) {
             risposta = "Sono in ordine crescente!";
