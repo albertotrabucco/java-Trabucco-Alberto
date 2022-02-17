@@ -49,8 +49,6 @@ public class esercizio1{
             System.out.print("La somma delle cifre trovate è: ");
             System.out.print(sumcifre);
             }
-            //compara con un array randomico generato in una funzione fuori dal main
-
             
             System.out.println("\n");
             System.out.println("-----------------------------------------------------------------");
