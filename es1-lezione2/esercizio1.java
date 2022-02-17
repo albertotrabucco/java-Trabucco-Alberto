@@ -12,6 +12,9 @@ public class esercizio1{
             int randnum = rand.nextInt(9);
             randomarray[i] = randnum;
         }
+        for(int k=0; k < n; k++){
+            System.out.print(randomarray[k] + " ");
+        }
 
         for(int i = 0; i < tentativi; i++){
             System.out.println("Inserisci un numero di 5 cifre: ");
@@ -20,7 +23,7 @@ public class esercizio1{
                 System.out.println("Inserisci il "+(j+1)+"° numero:");
                 userarray[i] = Integer.parseInt(keyboard.nextLine());
             }
-            for(int k=0; k < n; i++){
+            for(int k=0; k < n; k++){
                 System.out.print(userarray[k] + " ");
             }
             
