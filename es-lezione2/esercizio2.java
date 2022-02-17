@@ -17,9 +17,9 @@ public class esercizio2 {
             arrcheckDesc[i] = arrcheckDesc[i]*(-1);
         }
 
-        if(arrcheckDesc != a || arrcheckDesc != a){
+        if(arrcheckAsc == a){
             risposta = "Sono in ordine decrescente!";
-        }if (arrcheckAsc == a) {
+        }if (arrcheckDesc == a) {
             risposta = "Sono in ordine crescente!";
         }
         
