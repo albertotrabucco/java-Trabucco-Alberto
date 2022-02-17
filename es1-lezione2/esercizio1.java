@@ -26,9 +26,9 @@ public class esercizio1{
                 userarray[j] = Integer.parseInt(keyboard.nextLine());
             }
             System.out.println("\n");
-            for(int k=0; k < n; k++){
-                System.out.println("Questo è il numero che hai scritto: ");
-                System.out.print(userarray[k]);
+            System.out.println("Questo è il numero che hai scritto: ");
+            for(int k=0; k < n; k++){                
+                System.out.println(userarray[k]);
             }
             
 
