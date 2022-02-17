@@ -26,14 +26,24 @@ public class esercizio1{
                 userarray[j] = Integer.parseInt(keyboard.nextLine());
             }
             System.out.println("\n");
-            System.out.println("Questo è il numero che hai scritto: ");
+            System.out.print("Questo è il numero che hai scritto: ");
             for(int k=0; k < n; k++){                
                 System.out.print(userarray[k]);
             }
-            
+            System.out.println("\n");
+            System.out.print("Le cifre nella posizione giusta sono: ");
+            int ncifre = 0;
+            int sumcifre = 0;
+            for(int i = 0; i < n; i++){
+                if(userarray[i] == randomarray[i]){
+                ncifre++;
+                sumcifre += userarray[i];
+                }
+            }
+
+            //compara con un array randomico generato in una funzione fuori dal main
 
             
-            //compara con un array randomico generato in una funzione fuori dal main
             System.out.println("\n");
             System.out.println("-----------------------------------------------------------------");
 
