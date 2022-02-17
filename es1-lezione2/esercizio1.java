@@ -1,18 +1,27 @@
 import java.util.Scanner;
+import java.util.Random;
 public class esercizio1{
     public static void main(String[] args){
         int tentativi = 10;
         Scanner keyboard = new Scanner(System.in);
-
+        int n = 5;
+        
+        int randomarray[]= new int[n];
+        for(int i = 0; i < n; i++){
+            Random rand = new Random();
+            int randnum = rand.nextInt(9);
+            randomarray[i] = randnum;
+        }
 
         for(int i = 0; i < tentativi; i++){
-            
             System.out.println("Inserisci un numero di 5 cifre: ");
-            int n = 5;
-            int array[] = new int[n];
+            int userarray[] = new int[n];
             for(int j=0; j < n; j++){
                 System.out.println("Inserisci il "+(j+1)+"° numero:");
-                array[i] = Integer.parseInt(keyboard.nextLine());
+                userarray[i] = Integer.parseInt(keyboard.nextLine());
+            }
+            for(int k=0; k < n; i++){
+                System.out.print(userarray[k] + " ");
             }
             
 
