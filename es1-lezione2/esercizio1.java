@@ -18,15 +18,16 @@ public class esercizio1{
         System.out.println("\n");
 
         int tries = 0;
-        while(tries < n){
+        while(tries < tentativi){
             System.out.println("Inserisci un numero di 5 cifre: ");
             int userarray[] = new int[n];
             for(int j=0; j < n; j++){
-                System.out.println("Inserisci il "+(j+1)+"° numero:");
+                System.out.println((j+1)+"° numero:");
                 userarray[j] = Integer.parseInt(keyboard.nextLine());
             }
+            System.out.println("\n");
             for(int k=0; k < n; k++){
-                System.out.println("Questo è il numero che hai scritto: ")
+                System.out.println("Questo è il numero che hai scritto: ");
                 System.out.print(userarray[k]);
             }
             
