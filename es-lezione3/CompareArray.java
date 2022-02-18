@@ -11,6 +11,8 @@ public class CompareArray {
         char[] firstStrtocharArray = firstStr.toCharArray();
         char[] secondStrtocharArray = secondStr.toCharArray();
 
+
+        System.out.print("Le lettere in comune sono: ");
         for(int i = 0; i < firstStrtocharArray.length; i++){
             for(int j = 0; j < secondStrtocharArray.length; j++){
                 if(firstStrtocharArray[i] == secondStrtocharArray[j]){
