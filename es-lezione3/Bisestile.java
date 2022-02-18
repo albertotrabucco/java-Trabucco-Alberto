@@ -9,7 +9,7 @@ public class Bisestile {
         if(anno % 4 == 0){
             System.out.println(anno+" E' Bisestile!");
         }else{
-            System.out.println(anno+" Non è Bisestile!");
+            System.out.println(anno+" Non e' Bisestile!");
         }
     }        
 }
