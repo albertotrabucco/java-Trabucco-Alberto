@@ -8,7 +8,7 @@ public class RicorsioneEsempio {
             metodoRicorsivo(n-1);
     }
     public static void main(String[] args) {
-        metodoRicorsivo(3);
+        //metodoRicorsivo(3);
 
         stampaPari(5);
     }
@@ -16,8 +16,15 @@ public class RicorsioneEsempio {
     public static void stampaPari(int n){
     // Esercizio 2: (scrivi un metodo ricorsivo che stampi i numeri pari da 0 a n)
     // esempio: input: 5, stampa: 0 2 4 
+        if(n >= 0){    
+            if(n % 2 == 0){
+               System.out.println(n);
+            }
+            stampaPari(n-1);
+        }
 
     }
+
 
 
 }
