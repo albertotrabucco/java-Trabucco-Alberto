@@ -23,5 +23,21 @@ public class Nil extends List{
             return null;
         }
     }
+    @Override
+    public List remove(int n){
+        return this;
+    }
 
+    @Override
+    public int length(){
+        return 0;
+    }
+
+    @Override
+    public List removeIndex(int i) {
+        System.out.println("Index out of bound exception");
+        System.exit(1);
+        return this;
+    }
 }
+
