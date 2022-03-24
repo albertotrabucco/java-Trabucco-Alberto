@@ -25,10 +25,10 @@ public class Lista {
     }
 
     public boolean removeProdotto(String nome) {
-        if (prodotti.contains(nome)){
+        if (prodotti.contains(nome)) {
             prodotti.remove(nome);
             return true;
-        }else{
+        } else {
             return false;
         }
     }

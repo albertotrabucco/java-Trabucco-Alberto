@@ -40,10 +40,10 @@ public class Calcolatrice {
         pila.add(num);
     }
 
-    public static void finito(){
-        if()
-    }
 
+    public static void finito(){
+
+    }
 
 
     public static void main(String[] args) {
@@ -70,7 +70,7 @@ public class Calcolatrice {
                     System.out.println(pila);
                     break;
                 case "E":
-                    finito = true;
+                    //finito = true;
                     break;
                 default:
                     aggiuntaNum(Double.parseDouble(input));
